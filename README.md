@@ -48,7 +48,7 @@ It has the following menu:
 │                                                                                                  │ 
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘ 
 ```
-_**Moving aroung the menu
+_**Moving aroung the menu**
 
 _Use the ```up``` and ```down``` arrow keys to move the highlighted selection between the options available. <br/>
 _Pressing the ```Tab``` key will jump out of the Options menu and take you to the ```<Select>``` and _```<Finish>``` buttons.
@@ -77,7 +77,7 @@ Goes to ``` P5 I2C Enable/Disable automatic loading of I2C kernel module``` and 
 select ```yes``` and ```ok```
 
 ## 
-**Go to Raspberry Pi Software Configuration Tool Again
+**Go to Raspberry Pi Software Configuration Tool Again**
 ```
 sudo raspi-config
 ```
@@ -86,7 +86,7 @@ Goes to ```3 Interfacae Option``` and press ```enter``` key. <br/>
 Goes to ``` P6 Serial Enable/Disable shell and kernel messages on the serial connection``` and press ```Enter``` key. <br/>
 select ```no``` and then ```yes``` and then ```ok```.
 
-**Leave Raspberry Pi Software Configuration Tool
+**Leave Raspberry Pi Software Configuration Tool**
 
 click ```Tab``` and ```Tab``` and ```Enter``` <br/>
 
