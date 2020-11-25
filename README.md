@@ -25,7 +25,7 @@ The battery of real time clock involves CR2032 in 3V to run.
 
 
 ## 
-**Go to Raspberry Pi Software Configuration Tool
+**Go to Raspberry Pi Software Configuration Tool**
 ```
 sudo raspi-config
 ```
@@ -48,10 +48,6 @@ It has the following menu:
 │                                                                                                  │ 
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘ 
 ```
-_**Moving aroung the menu**
-
-_Use the ```up``` and ```down``` arrow keys to move the highlighted selection between the options available. <br/>
-_Pressing the ```Tab``` key will jump out of the Options menu and take you to the ```<Select>``` and _```<Finish>``` buttons.
 
 Goes to ```3 Interfacae Option``` and press ```enter``` key.
 
