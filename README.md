@@ -107,9 +107,11 @@ Save it and run ```sudo reboot``` to start again. Log in and run ```sudo i2cdete
 70: -- -- -- -- -- -- -- --
 ```
 
-Disable the "fake hwclock" which interferes with the 'real' hwclock
-```sudo apt-get -y remove fake-hwclock``` <br/>
+Disable the "fake hwclock" which interferes with the 'real' hwclock <br/>
+```sudo apt-get -y remove fake-hwclock``` <br/> 
+OR <br/>
 ```sudo update-rc.d -f fake-hwclock remove``` <br/>
+OR <br/>
 ```sudo systemctl disable fake-hwclock``` <br/>
 
 Now with the fake-hw clock off, you can start the original 'hardware clock' script.
