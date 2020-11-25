@@ -24,7 +24,54 @@ The IFS RPI 485 HAT can also be used without Raspberry Pi. There are pinouts nam
 The battery of real time clock involves CR2032 in 3V to run.
 
 
+## 
+**Go to Raspberry Pi Software Configuration Tool
+```
+sudo raspi-config
+```
 
-```
-sudo raspi config
-```
+It has the following menu: 
+
+┌───────────────────┤ Raspberry Pi Software Configuration Tool (raspi-config) ├────────────────────┐
+│                                                                                                  │
+│        1 System Options       Configure system settings                                          │
+│        2 Display Options      Configure display settings                                         │
+│        3 Interface Options    Configure connections to peripherals                               │
+│        4 Performance Options  Configure performance settings                                     │
+│        5 Localisation Options Configure language and regional settings                           │
+│        6 Advanced Options     Configure advanced settings                                        │           │
+│        8 Update               Update this tool to the latest version                             │
+│        9 About raspi-config   Information about this configuration tool                          │
+│                                                                                                  │
+│                                                                                                  │
+│                           <Select>                           <Finish>                            │
+│                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+_**Moving aroung the menu
+
+_Use the ```up``` and ```down``` arrow keys to move the highlighted selection between the options available. _Pressing the ```Tab``` key will jump out of the Options menu and take you to the ```<Select>``` and _```<Finish>``` buttons.
+
+Goes to ```3 Interfacae Option``` and press ```enter``` key.
+
+It has the following menu: 
+
+┌───────────────────┤ Raspberry Pi Software Configuration Tool (raspi-config) ├────────────────────┐
+│                                                                                                  │
+│        P1 Camera       Enable/disable connection to the Raspberry Pi Camera                      │          |        P2 SSH         Enable/Disable remote command line access to your Pi using SSH             │
+│        P3 VNC         Enable/Disable graphical remote access to your Pi using RealVNC            │
+│        P4 SPI         Enable/Disable automatic loading of SPI kernel module                      │
+│        P5 I2C         Enable/Disable automatic loading of I2C kernel module                      │
+│        P6 Serial      Enable/Disable shell and kernel messages on the serial connection          │
+│        P7 1-Wire      Enable/Disable one-wire interface                                          │
+│        P8 Remote GPIO Enable/Disable remote access to GPIO pins                                  │
+│                                                                                                  │
+│                                                                                                  │
+│                           <Select>                           <Finish>                            │
+│                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Goes to ``` P5 I2C Enable/Disable automatic loading of I2C kernel module``` and press ```Enter``` key.
+select ```yes``` and ```ok```
+
+
