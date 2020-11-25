@@ -32,25 +32,26 @@ sudo raspi-config
 
 It has the following menu: 
 ```
-┌───────────────────┤ Raspberry Pi Software Configuration Tool (raspi-config) ├────────────────────┐ <br/>
-│                                                                                                  │ <br/>
-│        1 System Options       Configure system settings                                          │ <br/>
-│        2 Display Options      Configure display settings                                         │ <br/>
-│        3 Interface Options    Configure connections to peripherals                               │ <br/>
-│        4 Performance Options  Configure performance settings                                     │ <br/>
-│        5 Localisation Options Configure language and regional settings                           │ <br/>
-│        6 Advanced Options     Configure advanced settings                                        │ <br/>          
-│        8 Update               Update this tool to the latest version                             │ <br/>
-│        9 About raspi-config   Information about this configuration tool                          │ <br/>
-│                                                                                                  │ <br/>
-│                                                                                                  │ <br/>
-│                           <Select>                           <Finish>                            │ <br/>
-│                                                                                                  │ <br/>
-└──────────────────────────────────────────────────────────────────────────────────────────────────┘ <br/>
+┌───────────────────┤ Raspberry Pi Software Configuration Tool (raspi-config) ├────────────────────┐ 
+│                                                                                                  │ 
+│        1 System Options       Configure system settings                                          │ 
+│        2 Display Options      Configure display settings                                         │ 
+│        3 Interface Options    Configure connections to peripherals                               │ 
+│        4 Performance Options  Configure performance settings                                     │ 
+│        5 Localisation Options Configure language and regional settings                           │ 
+│        6 Advanced Options     Configure advanced settings                                        │           
+│        8 Update               Update this tool to the latest version                             │ 
+│        9 About raspi-config   Information about this configuration tool                          │ 
+│                                                                                                  │ 
+│                                                                                                  │ 
+│                           <Select>                           <Finish>                            │ 
+│                                                                                                  │ 
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘ 
 ```
 _**Moving aroung the menu
 
-_Use the ```up``` and ```down``` arrow keys to move the highlighted selection between the options available. _Pressing the ```Tab``` key will jump out of the Options menu and take you to the ```<Select>``` and _```<Finish>``` buttons.
+_Use the ```up``` and ```down``` arrow keys to move the highlighted selection between the options available. <br/>
+_Pressing the ```Tab``` key will jump out of the Options menu and take you to the ```<Select>``` and _```<Finish>``` buttons.
 
 Goes to ```3 Interfacae Option``` and press ```enter``` key.
 
@@ -75,4 +76,17 @@ It has the following menu:
 Goes to ``` P5 I2C Enable/Disable automatic loading of I2C kernel module``` and press ```Enter``` key. <br/>
 select ```yes``` and ```ok```
 
+## 
+**Go to Raspberry Pi Software Configuration Tool Again
+```
+sudo raspi-config
+```
+
+Goes to ```3 Interfacae Option``` and press ```enter``` key. <br/>
+Goes to ``` P6 Serial Enable/Disable shell and kernel messages on the serial connection``` and press ```Enter``` key. <br/>
+select ```no``` and then ```yes``` and then ```ok```.
+
+**Leave Raspberry Pi Software Configuration Tool
+
+click ```Tab``` and ```Tab``` and ```Enter``` <br/>
 
