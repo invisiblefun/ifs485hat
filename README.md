@@ -116,7 +116,7 @@ OR <br/>
 
 Now with the fake-hw clock off, you can start the original 'hardware clock' script.
 
-Run sudo nano /lib/udev/hwclock-set and comment out these three lines:
+Run ```sudo nano /lib/udev/hwclock-set``` and comment out these three lines:
 
 ```
 #if [ -e /run/systemd/system ] ; then
