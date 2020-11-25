@@ -90,3 +90,27 @@ select ```no``` and then ```yes``` and then ```ok```.
 
 click ```Tab``` and ```Tab``` and ```Enter``` <br/>
 
+**Raspbian Jessie (Systemd)**
+
+You can add support for the RTC by adding a device tree overlay. Run
+
+```sudo nano /boot/config.txt``` to edit the pi configuration and add whichever matches your RTC chip: <br/>
+```dtoverlay=i2c-rtc,ds3231```
+
+to the end of the file
+
+Save it and run ```sudo reboot``` to start again. Log in and run ```sudo i2cdetect -y 1``` to see the UU show up where 0x68 should be
+
+```    
+    0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- UU -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+```
+
+Disable the "fake hwclock" which interferes with the 'real' hwclock
