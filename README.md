@@ -31,7 +31,7 @@ sudo raspi-config
 ```
 
 It has the following menu: 
-```
+
 ┌───────────────────┤ Raspberry Pi Software Configuration Tool (raspi-config) ├────────────────────┐ <br/>
 │                                                                                                  │ <br/>
 │        1 System Options       Configure system settings                                          │ <br/>
@@ -47,7 +47,7 @@ It has the following menu:
 │                           <Select>                           <Finish>                            │ <br/>
 │                                                                                                  │ <br/>
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘ <br/>
-```
+
 _**Moving aroung the menu
 
 _Use the ```up``` and ```down``` arrow keys to move the highlighted selection between the options available. _Pressing the ```Tab``` key will jump out of the Options menu and take you to the ```<Select>``` and _```<Finish>``` buttons.
@@ -55,7 +55,7 @@ _Use the ```up``` and ```down``` arrow keys to move the highlighted selection be
 Goes to ```3 Interfacae Option``` and press ```enter``` key.
 
 It has the following menu: 
-```
+
 ┌───────────────────┤ Raspberry Pi Software Configuration Tool (raspi-config) ├────────────────────┐ <br/>
 │                                                                                                  │ <br/>
 │        P1 Camera       Enable/disable connection to the Raspberry Pi Camera                      │ <br/>                                                           |        P2 SSH         Enable/Disable remote command line access to your Pi using SSH             │ <br/>
@@ -70,7 +70,7 @@ It has the following menu:
 │                           <Select>                           <Finish>                            │ <br/>
 │                                                                                                  │ <br/>
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘ <br/>
-```
+
 
 Goes to ``` P5 I2C Enable/Disable automatic loading of I2C kernel module``` and press ```Enter``` key. <br/>
 select ```yes``` and ```ok```
