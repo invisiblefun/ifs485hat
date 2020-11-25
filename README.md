@@ -22,3 +22,9 @@ Mounting hole size: 3.0mm
 Remark: 
 The IFS RPI 485 HAT can also be used without Raspberry Pi. There are pinouts named RX, TX, 5V and GND, which allow you to use it for RS485 communication only.
 The battery of real time clock involves CR2032 in 3V to run.
+
+
+
+```
+sdanjefhw
+```
