@@ -83,18 +83,15 @@ Goes to ```3 Interfacae Option``` and press ```enter``` key. <br/>
 Goes to ``` P6 Serial Enable/Disable shell and kernel messages on the serial connection``` and press ```Enter``` key. <br/>
 select ```no``` and then ```yes``` and then ```ok```.
 
+
 **Leave Raspberry Pi Software Configuration Tool**
 
 click ```Tab``` and ```Tab``` and ```Enter``` <br/>
 
+
 **Raspbian Jessie (Systemd)**
 
-You can add support for the RTC by adding a device tree overlay. Run
-
-```sudo nano /boot/config.txt``` to edit the pi configuration and add whichever matches your RTC chip: <br/>
-```dtoverlay=i2c-rtc,ds3231```
-
-to the end of the file
+You can add support for the RTC by adding a device tree overlay. Run ```sudo nano /boot/config.txt``` to edit the pi configuration and add whichever matches your RTC chip: ```dtoverlay=i2c-rtc,ds3231``` to the end of the file.
 
 Save it and run ```sudo reboot``` to start again. Log in and run ```sudo i2cdetect -y 1``` to see the UU show up where 0x68 should be
 
@@ -111,24 +108,24 @@ Save it and run ```sudo reboot``` to start again. Log in and run ```sudo i2cdete
 ```
 
 Disable the "fake hwclock" which interferes with the 'real' hwclock
-*```sudo apt-get -y remove fake-hwclock```
-*```sudo update-rc.d -f fake-hwclock remove```
-*```sudo systemctl disable fake-hwclock```
+```sudo apt-get -y remove fake-hwclock``` <br/>
+```sudo update-rc.d -f fake-hwclock remove``` <br/>
+```sudo systemctl disable fake-hwclock``` <br/>
 
 Now with the fake-hw clock off, you can start the original 'hardware clock' script.
 
 Run sudo nano /lib/udev/hwclock-set and comment out these three lines:
 
-#if [ -e /run/systemd/system ] ; then
+```#if [ -e /run/systemd/system ] ; then
 #exit 0
 #fi
+```
 
 Also comment out the two lines
 ```/sbin/hwclock --rtc=$dev --systz --badyear```
-
 and 
-
 ```/sbin/hwclock --rtc=$dev --systz```
+
 
 **Sync time from Pi to RTC**
 
