@@ -24,7 +24,7 @@ The IFS RPI 485 HAT can also be used without Raspberry Pi. There are pinouts nam
 The battery of real time clock involves CR2032 in 3V to run.
 
 
-## 
+## User Guide 
 **Go to Raspberry Pi Software Configuration Tool**
 ```
 sudo raspi-config
