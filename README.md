@@ -115,3 +115,32 @@ Save it and run ```sudo reboot``` to start again. Log in and run ```sudo i2cdete
 ```
 
 Disable the "fake hwclock" which interferes with the 'real' hwclock
+*```sudo apt-get -y remove fake-hwclock```
+*```sudo update-rc.d -f fake-hwclock remove```
+*```sudo systemctl disable fake-hwclock```
+
+Now with the fake-hw clock off, you can start the original 'hardware clock' script.
+
+Run sudo nano /lib/udev/hwclock-set and comment out these three lines:
+
+#if [ -e /run/systemd/system ] ; then
+# exit 0
+#fi
+
+Also comment out the two lines
+```/sbin/hwclock --rtc=$dev --systz --badyear```
+
+and 
+
+```/sbin/hwclock --rtc=$dev --systz```
+
+**Sync time from Pi to RTC**
+
+When you first plug in the RTC module, it's going to have the wrong time because it has to be set once. You can always read the time directly from the RTC with ```sudo hwclock -D -r```
+
+You can see, the date at first is invalid! You can set the correct time easily. First run ```date``` to verify the time is correct. Plug in Ethernet or WiFi to let the Pi sync the right time from the Internet. Once that's done, run ```sudo hwclock -w``` to write the time, and another ```sudo hwclock -r``` to read the time
+
+
+Once the time is set, make sure the coin cell battery is inserted so that the time is saved. You only have to set the time once
+
+That's it! Next time you boot the time will automatically be synced from the RTC module
