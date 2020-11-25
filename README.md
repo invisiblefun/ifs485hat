@@ -59,7 +59,8 @@ It has the following menu:
 ```
 ┌───────────────────┤ Raspberry Pi Software Configuration Tool (raspi-config) ├────────────────────┐ 
 │                                                                                                  │ 
-│        P1 Camera       Enable/disable connection to the Raspberry Pi Camera                      │                                                               |        P2 SSH         Enable/Disable remote command line access to your Pi using SSH             │ 
+│        P1 Camera       Enable/disable connection to the Raspberry Pi Camera                      |
+|        P2 SSH         Enable/Disable remote command line access to your Pi using SSH             │ 
 │        P3 VNC         Enable/Disable graphical remote access to your Pi using RealVNC            │ 
 │        P4 SPI         Enable/Disable automatic loading of SPI kernel module                      │ 
 │        P5 I2C         Enable/Disable automatic loading of I2C kernel module                      │ 
