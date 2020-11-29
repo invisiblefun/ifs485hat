@@ -1,5 +1,8 @@
 # ifs485hat
 The bootstrap code for setting up environment for our dedicated hardware rpi 485 hat. 
+https://store.invisiblefun.com/collections/frontpage/products/ifs-485-hat-with-rtc
+
+![alt text](https://cdn.shopify.com/s/files/1/0261/8549/8696/products/IMG_3062_1024x1024@2x.png?v=1606290624)
 
 
 ## Introduction : 
@@ -25,7 +28,7 @@ The battery of real time clock involves CR2032 in 3V to run.
 
 
 ## User Guide 
-**Go to Raspberry Pi Software Configuration Tool**
+**Go to Raspberry Pi Software Configuration Tool to enble i2C and Uart interface**
 ```
 sudo raspi-config
 ```
@@ -82,7 +85,7 @@ sudo raspi-config
 Goes to ```3 Interfacae Option``` and press ```enter``` key. <br/>
 Goes to ``` P6 Serial Enable/Disable shell and kernel messages on the serial connection``` and press ```Enter``` key. <br/>
 select ```no``` and then ```yes``` and then ```ok```.
-
+** Do not enable access of shell over uart!!!
 
 **Leave Raspberry Pi Software Configuration Tool**
 
